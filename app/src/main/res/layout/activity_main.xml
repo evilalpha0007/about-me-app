@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="328dp"
+        android:layout_height="265dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/myphoto"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/followme"
+        android:layout_width="228dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/follow_me_on"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/instatext"
+        android:layout_width="175dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/instagram"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/followme" />
+
+    <ImageView
+        android:id="@+id/instaimg"
+        android:layout_width="89dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/instagramimge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toEndOf="@+id/instatext"
+        app:layout_constraintTop_toBottomOf="@+id/followme"
+        app:srcCompat="@drawable/insta" />
+
+    <TextView
+        android:id="@+id/yttext"
+        android:layout_width="175dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/youtube"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instatext" />
+
+    <TextView
+        android:id="@+id/fbtext"
+        android:layout_width="179dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/facebook"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yttext" />
+
+    <ImageView
+        android:id="@+id/ytimg"
+        android:layout_width="116dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintStart_toEndOf="@+id/yttext"
+        app:layout_constraintTop_toBottomOf="@+id/instaimg"
+        app:srcCompat="@drawable/youtube"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/fbimg"
+        android:layout_width="141dp"
+        android:layout_height="101dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/fbtext"
+        app:layout_constraintTop_toBottomOf="@+id/ytimg"
+        app:layout_constraintVertical_bias="0.733"
+        app:srcCompat="@drawable/facebook"
+        android:contentDescription="@string/todo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
